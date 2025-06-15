@@ -4,11 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Landing Page</title>
+  <link rel="shortcut icon" href="foto_carnet.png" type="image/x-icon">
+  <title>Mi web personal</title>
 </head>
-<body>
-  <h1 id="holaMundo">Hola, Mundo!</h1>
-  <button id="bHolaMundo">Haz clic para cambiar el texto</button>
+<body id="body">
+  <header>
+    <div id="header1">
+      <div><img src="foto_carnet.png" alt="" height="20px"></div>
+      <div>Marco Cardenas</div>
+    </div>
+    <div id="header-alt">
+      <img src="user_active.webp" alt="" id="menu_adaptable">
+    </div>
+    <div id="header2">
+      <button id="boton-sec-sobre-mi">Sobre mi</button>
+      <button id="boton-sec-servicios">Servicios</button>
+      <button id="boton-sec-portafolio">Portafolio</button>
+      <button id="boton-sec-contactame">Contactame</button>
+    </div>
+  </header>
+  <main>
+    <div>
+      <!-- INICIO -->
+      <div id="sec-inicio">
+        <img src="img_fondo.jpg" alt="">
+        <p>
+          Hola! Soy Marco Cardenas y sere tu desarrollador de confianza, ofrezco amplios conocimiento en el mundo del desarrollo de software
+          multiplataforma, espero que encuentres lo que buscas en este lugar! Animate a que forme parte de tu proyecto y construyamos juntos el futuro.
+        </p>
+      </div>
+
+      <!-- ABOUT ME -->
+      <div id="sec-sobre-mi">
+        <h2>Sobre Mi</h2>
+        <p>
+          Programador apasionado y proactivo con 5 años de experiencia en el desarrollo de software. 
+          Demuestro una sólida capacidad para aprender y aplicar nuevas tecnologías, así como para resolver problemas de manera eficiente. 
+          Busco contribuir con mis habilidades en desarrollo web frontend/backend y de Bases de Datos para crear soluciones innovadoras y de alto impacto en un entorno dinámico.
+          Passionate and proactive programmer with 5 years of experience in software development. 
+          I demonstrate a strong ability to learn and apply new technologies, as well as to solve problems efficiently. 
+          I seek to contribute my skills in frontend/backend web development and database management to create innovative and high-impact solutions in a dynamic environment.
+        </p>
+      </div>
+
+      <!-- SERVICES -->
+      <div id="sec-servicios">
+        <h2>Servicios</h2>
+        <p>
+          Con una sólida base en el desarrollo de software, ofrezco una gama completa de servicios para construir soluciones robustas y escalables. 
+          Me especializo en desarrollo web integral, creando interfaces de usuario interactivas y responsivas con React y Angular para el frontend, 
+          y construyendo arquitecturas de servidor eficientes y seguras con NestJS y Node.js para el backend. 
+          Además, tengo experiencia en desarrollo móvil nativo para Android, creando aplicaciones de alto rendimiento y diseño intuitivo utilizando 
+          Kotlin. En cuanto a la gestión de bases de datos, diseño e implemento soluciones de almacenamiento eficientes con MongoDB y PostgreSQL, 
+          asegurando la integridad y disponibilidad de la información.
+          With a strong foundation in software development, I offer a comprehensive range of services to build robust and scalable solutions. 
+          I specialize in full-stack web development, creating interactive and responsive user interfaces with React and Angular for the frontend, 
+          and building efficient and secure server architectures with NestJS and Node.js for the backend. 
+          Additionally, I have experience in native mobile development for Android, crafting high-performance and intuitively designed applications 
+          using Kotlin. When it comes to database management, I design and implement efficient storage solutions with MongoDB and PostgreSQL, 
+          ensuring data integrity and availability.
+        </p>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div id="sec-portafolio">
+        <h2>Portafolio</h2>
+        <div id="contenedor-proyectos"></div>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="sec-contacto">
+        <h2>Contactame</h2>
+        <form name="contact" action="#" method="POST">
+          <label for="nombre"><b>Nombre:</b></label><br>
+          <input type="text" id="nombre" name="nombre" required placeholder="Example"><br><br>
+
+          <label for="correo"><b>Correo electrónico:</b></label><br>
+          <input type="email" id="correo" name="correo" required placeholder="Example@gmail.com"><br><br>
+
+          <label for="mensaje"><b>Tu mensaje:</b></label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Quiero una aplicacion movil..."></textarea><br><br>
+
+          <button type="submit" id="enviar-correo">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <h3 class="follow-us-title">Sígueme</h3>
+        <div class="social-icons">
+            <a href="#"><img src="logo-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="logo-x.jpg" alt="Twitter"></a>
+            <a href="#"><img src="logo-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="logo-linkedin.png" alt="Linkedin"></a>
+        </div>
+    </div>
+    <p class="copyright">Derechos reservados &copy; 2025</p>
+  </footer>
 </body>
 <script src="functions.js"></script>
 </html>

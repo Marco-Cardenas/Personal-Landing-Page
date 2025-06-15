@@ -1,3 +1,227 @@
-#holaMundo {
-  color:blue;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2 {
+  margin-bottom: 10px;
+}
+header {
+  border-bottom: 1px solid gray;
+  width: 100vw;
+  display: flex;
+}
+#header1 {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  font-size: 20px;
+}
+#header1 > * {
+  margin-left: 2%;
+}
+@media (min-width: 601px) {
+  #menu_adaptable, #header-alt {
+    display: none;
+  }
+  #header2 {
+    display: block;
+    position: static;
+    left: 0;
+    background-color: white;
+    width: 50%;
+    text-align: right;
+  }
+}
+
+#header2 {
+  display: block;
+  position: static;
+  left: 0;
+  background-color: white;
+  width: 50%;
+  text-align: right;
+}
+
+#header2 > button {
+  font-size: 20px;
+  margin-right: 4%;
+}
+#header2 > button:hover {
+  color: blue;
+}
+
+main {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+main > div {
+  background-color: white;
+  width: 80vw;
+}
+
+main > div > div {
+  margin-bottom: 15px;
+}
+
+#sec-inicio {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: aqua;
+  text-align: center;
+}
+
+#sec-inicio > img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#sec-inicio > p {
+  position: relative;
+  background-color: aqua;
+  font-size: 20px;
+  top: -50px;
+  line-height: 1.2;
+}
+    
+#contenedor-proyectos {
+  display: flex;
+}
+.tarjeta-objeto {
+  border: 1px solid black;
+  border-bottom: 0px;
+  height: 300px;
+  width: 200px;
+  margin: 5px;
+  overflow: scroll;
+  text-align: center;
+   &::-webkit-scrollbar {
+    display: none; /* Oculta la barra completa */
+    width: 0; /* Asegura que no ocupe espacio horizontal */
+    height: 0; /* Asegura que no ocupe espacio vertical */
+  }
+}
+.tarjeta-objeto > div > img {
+  height: 100%;
+}
+.tarjeta-objeto > div {
+  height: 50%;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+#sec-contacto {
+  border: 0;
+}
+input {
+  background-color: #7fe5fc55;
+  padding: 6px;
+}
+textarea {
+  resize: none;
+  background-color: #7fe5fc55;
+  padding: 6px;
+}
+#enviar-correo {
+  background-color: aqua;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  #header-alt {
+    display: block;
+    background-color: white;
+    width: 50%;
+    text-align: right;
+  }
+  #menu_adaptable {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  #contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #header2 {
+    display: none;
+  }
+}
+
+footer {
+  border-top: 1px solid gray;
+  width: 100vw;
+  height: 150px;
+}
+.footer {
+    background-color: #333; /* Color de fondo oscuro para el footer */
+    color: white;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Apila el título y las imágenes */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    max-width: 960px; /* Ancho máximo para el contenido del footer */
+    margin: 0 auto; /* Centra el contenido del footer */
+    padding: 0 20px; /* Padding horizontal para el contenido */
+    box-sizing: border-box;
+}
+
+.follow-us-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: left; /* Asegura que el título esté alineado a la izquierda */
+}
+
+.social-icons {
+    display: flex; /* Para que las imágenes estén en fila */
+    gap: 15px; /* Espacio entre las imágenes */
+    margin-bottom: 20px; /* Espacio entre las imágenes y el texto de derechos */
+}
+
+.social-icons img {
+    width: 40px; /* Tamaño de los íconos */
+    height: 40px;
+    border-radius: 50%; /* Opcional: para hacerlas redondas */
+    object-fit: cover; /* Para que las imágenes llenen el espacio sin distorsionarse */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón */
+}
+
+.copyright {
+    text-align: center; /* Centra el texto de derechos reservados */
+    font-size: 0.9em;
+    padding-top: 10px; /* Espacio entre las secciones del footer */
+    border-top: 1px solid #444; /* Línea divisoria opcional */
+    max-width: 960px; /* Alinea con el ancho del contenido de arriba */
+    margin: 0 auto;
 }
