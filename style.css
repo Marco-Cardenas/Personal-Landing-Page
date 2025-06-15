@@ -168,6 +168,10 @@ textarea {
   #header2 {
     display: none;
   }
+
+  #sec-inicio > p {
+    font-size: 12px;
+  }
 }
 
 footer {
