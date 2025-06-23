@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="foto_carnet.png" type="image/x-icon">
-  <title>Mi web personal</title>
-</head>
-<body id="body">
-  <header>
-    <div id="header1">
-      <div><img src="foto_carnet.png" alt="" height="20px"></div>
-      <div>Marco Cardenas</div>
-    </div>
-    <div id="header-alt">
-      <img src="user_active.webp" alt="" id="menu_adaptable">
-    </div>
-    <div id="header2">
-      <button id="boton-sec-sobre-mi">Sobre mi</button>
-      <button id="boton-sec-servicios">Servicios</button>
-      <button id="boton-sec-portafolio">Portafolio</button>
-      <button id="boton-sec-contactame">Contactame</button>
-    </div>
-  </header>
-  <main>
-    <div>
-      <!-- INICIO -->
-      <div id="sec-inicio">
-        <img src="img_fondo.jpg" alt="">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Landing Page">
+    <meta name="keywords" content="Desarrollo Web Frontend/Backend, Desarrollo Movil">
+    <meta name="author" content="Marco Cardenas">
+    <title>Marco Cardenas | Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/foto_carnet.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="img/foto_carnet.png" alt="Mi Foto" style="width: 100px;">
+          <h1><span class="highlight">Marco Cardenas</span> Desarrollador</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html#sec-sobre-mi">Sobre Mi</a></li>
+            <li><a href="index.html#sec-proyectos">Proyectos</a></li>
+            <li><a href="index.html#sec-servcios">Servicios</a></li>
+            <li><a href="index.html#sec-contactame">Contactame</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Desarrollador de Software</h1>
         <p>
-          Hola! Soy Marco Cardenas y sere tu desarrollador de confianza, ofrezco amplios conocimiento en el mundo del desarrollo de software
-          multiplataforma, espero que encuentres lo que buscas en este lugar! Animate a que forme parte de tu proyecto y construyamos juntos el futuro.
+          Hola! Soy Marco Cardenas y sere tu desarrollador de confianza, ofrezco amplios conocimiento en el mundo del desarrollo de software multiplataforma, espero que encuentres lo que buscas en este lugar!
+          Animate a que forme parte de tu proyecto y construyamos juntos el futuro.
         </p>
       </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Suscribete al correo para notificarte de lo nuevo</h1>
+        <form id="form-suscriptor">
+          <input id="form-suscriptor-email" type="email" placeholder="Ingresa tu correo..." required>
+          <button type="submit" class="button_1">Suscribete</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="Informacion">
 
       <!-- ABOUT ME -->
       <div id="sec-sobre-mi">
@@ -41,67 +56,111 @@
           Programador apasionado y proactivo con 5 años de experiencia en el desarrollo de software. 
           Demuestro una sólida capacidad para aprender y aplicar nuevas tecnologías, así como para resolver problemas de manera eficiente. 
           Busco contribuir con mis habilidades en desarrollo web frontend/backend y de Bases de Datos para crear soluciones innovadoras y de alto impacto en un entorno dinámico.
-          Passionate and proactive programmer with 5 years of experience in software development. 
-          I demonstrate a strong ability to learn and apply new technologies, as well as to solve problems efficiently. 
-          I seek to contribute my skills in frontend/backend web development and database management to create innovative and high-impact solutions in a dynamic environment.
+          Con una sólida base en el desarrollo de software, ofrezco una gama completa de servicios para construir soluciones robustas y 
+          escalables. Me especializo en desarrollo web integral, creando interfaces de usuario interactivas y responsivas con React y 
+          Angular para el frontend, y construyendo arquitecturas de servidor eficientes y seguras con NestJS y Node.js para el backend. 
+          Además, tengo experiencia en desarrollo móvil nativo para Android, creando aplicaciones de alto rendimiento y diseño intuitivo 
+          utilizando Kotlin. En cuanto a la gestión de bases de datos, diseño e implemento soluciones de almacenamiento eficientes con MongoDB 
+          y PostgreSQL, asegurando la integridad y disponibilidad de la información.
         </p>
       </div>
 
       <!-- SERVICES -->
-      <div id="sec-servicios">
-        <h2>Servicios</h2>
-        <p>
-          Con una sólida base en el desarrollo de software, ofrezco una gama completa de servicios para construir soluciones robustas y escalables. 
-          Me especializo en desarrollo web integral, creando interfaces de usuario interactivas y responsivas con React y Angular para el frontend, 
-          y construyendo arquitecturas de servidor eficientes y seguras con NestJS y Node.js para el backend. 
-          Además, tengo experiencia en desarrollo móvil nativo para Android, creando aplicaciones de alto rendimiento y diseño intuitivo utilizando 
-          Kotlin. En cuanto a la gestión de bases de datos, diseño e implemento soluciones de almacenamiento eficientes con MongoDB y PostgreSQL, 
-          asegurando la integridad y disponibilidad de la información.
-          With a strong foundation in software development, I offer a comprehensive range of services to build robust and scalable solutions. 
-          I specialize in full-stack web development, creating interactive and responsive user interfaces with React and Angular for the frontend, 
-          and building efficient and secure server architectures with NestJS and Node.js for the backend. 
-          Additionally, I have experience in native mobile development for Android, crafting high-performance and intuitively designed applications 
-          using Kotlin. When it comes to database management, I design and implement efficient storage solutions with MongoDB and PostgreSQL, 
-          ensuring data integrity and availability.
-        </p>
+      <div id="sec-proyectos">
+        <h2>Proyectos</h2>
       </div>
+    </section>
 
-      <!-- PORTFOLIO -->
-      <div id="sec-portafolio">
-        <h2>Portafolio</h2>
-        <div id="contenedor-proyectos"></div>
-      </div>
-
-      <!-- CONTACT -->
-      <div id="sec-contacto">
-        <h2>Contactame</h2>
-        <form name="contact" action="#" method="POST">
-          <label for="nombre"><b>Nombre:</b></label><br>
-          <input type="text" id="nombre" name="nombre" required placeholder="Example"><br><br>
-
-          <label for="correo"><b>Correo electrónico:</b></label><br>
-          <input type="email" id="correo" name="correo" required placeholder="Example@gmail.com"><br><br>
-
-          <label for="mensaje"><b>Tu mensaje:</b></label><br>
-          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Quiero una aplicacion movil..."></textarea><br><br>
-
-          <button type="submit" id="enviar-correo">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-content">
-        <h3 class="follow-us-title">Sígueme</h3>
-        <div class="social-icons">
-            <a href="#"><img src="logo-facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="logo-x.jpg" alt="Twitter"></a>
-            <a href="#"><img src="logo-instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="logo-linkedin.png" alt="Linkedin"></a>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="img/front.jpeg">
+          <h3>Red Networking</h3>
+          <p>Red de la UNEG para subida de proyectos</p>
+          </a>
         </div>
+        <div class="box">
+          <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="img/backend.png">
+          <h3>Donde Estoy?</h3>
+          <p>Sistema de busqueda de restaurantes a partir de la ubicacion actual</p>
+          </a>
+        </div>
+        <div class="box">
+          <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="img/TSF.png">
+          <h3>Perceptron Multicapas</h3>
+          <p>Saber cuando una mujer tiene diabetes a partir de distintos datos</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title" id="sec-servcios">Servicios</h1>
+          <ul id="services">
+            <li>
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <h3>Desarrollo de Servidores</h3>
+              <p>Desarrollo de servidores bajo cualquier tipo de arquitectura, paradigma y lenguaje.</p>
+        <p>Precios: $1.000,00 - $3.000,00</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <h3>Desarrollo Movil</h3>
+              <p>Desarrollo en dispositivos moviles Android con Kotlin, C o C++.</p>
+        <p>Precios: $350 al mes</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <h3>Arquitectura Web</h3>
+              <p>Desarrollamos paso a paso tus ideas para tu pagina web, asi sabes por donde empezar a trabajar.</p>
+        <p>Precios: $50 al mes</p>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3 id="sec-contactame">Contactame</h3>
+            <form class="quote">
+        <div>
+         <label>Nombre</label><br>
+         <input type="text" placeholder="Ejemplo" required>
+        </div>
+        <div>
+         <label>Correo</label><br>
+         <input type="email" placeholder="Ejemplo@gmail.com" required>
+        </div>
+        <div>
+         <label>Mensaje</label><br>
+         <textarea placeholder="Hola, quiero contratarte..." required></textarea>
+        </div>
+        <button class="button_1" type="submit">Enviar</button>
+     </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="footer-content">
+      <h3 class="follow-us-title">Sígueme</h3>
+      <div class="social-icons">
+          <a href="#"><img src="img/logo-facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="img/logo-x.jpg" alt="Twitter"></a>
+          <a href="#"><img src="img/logo-instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="img/logo-linkedin.png" alt="Linkedin"></a>
+      </div>
     </div>
-    <p class="copyright">Derechos reservados &copy; 2025</p>
-  </footer>
-</body>
-<script src="functions.js"></script>
+    <footer>
+      <p>Derechos Reservados, Copyright &copy; 2025</p>
+    </footer>
+  </body>
 </html>
