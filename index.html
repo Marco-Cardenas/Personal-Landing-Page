@@ -41,7 +41,7 @@
       <div class="container">
         <h1>Suscribete al correo para notificarte de lo nuevo</h1>
         <form id="form-suscriptor">
-          <input id="form-suscriptor-email" type="email" placeholder="Ingresa tu correo..." required>
+          <input id="form-suscriptor-email" type="email" name="email" placeholder="Ingresa tu correo..." required>
           <button type="submit" class="button_1">Suscribete</button>
         </form>
       </div>
@@ -74,24 +74,24 @@
     <section id="boxes">
       <div class="container">
         <div class="box">
-          <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="img/front.jpeg">
-          <h3>Red Networking</h3>
-          <p>Red de la UNEG para subida de proyectos</p>
+          <a id="p1url" href="" target="_blank" rel="noopener noreferrer">
+          <img id="p1img">
+          <h3 id="p1"></h3>
+          <p id="p1txt"></p>
           </a>
         </div>
         <div class="box">
-          <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="img/backend.png">
-          <h3>Donde Estoy?</h3>
-          <p>Sistema de busqueda de restaurantes a partir de la ubicacion actual</p>
+          <a id="p2url" href="" target="_blank" rel="noopener noreferrer">
+          <img id="p2img">
+          <h3 id="p2"></h3>
+          <p id="p2txt"></p>
           </a>
         </div>
         <div class="box">
-          <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="img/TSF.png">
-          <h3>Perceptron Multicapas</h3>
-          <p>Saber cuando una mujer tiene diabetes a partir de distintos datos</p>
+          <a id="p3url" href="" target="_blank" rel="noopener noreferrer">
+          <img id="p3img">
+          <h3 id="p3"></h3>
+          <p id="p3txt"></p>
           </a>
         </div>
       </div>
@@ -130,21 +130,21 @@
         <aside id="sidebar">
           <div class="dark">
             <h3 id="sec-contactame">Contactame</h3>
-            <form class="quote">
-        <div>
-         <label>Nombre</label><br>
-         <input type="text" placeholder="Ejemplo" required>
-        </div>
-        <div>
-         <label>Correo</label><br>
-         <input type="email" placeholder="Ejemplo@gmail.com" required>
-        </div>
-        <div>
-         <label>Mensaje</label><br>
-         <textarea placeholder="Hola, quiero contratarte..." required></textarea>
-        </div>
-        <button class="button_1" type="submit">Enviar</button>
-     </form>
+            <form class="quote" id="form-contacto">
+              <div>
+              <label>Nombre</label><br>
+              <input id="form-contacto-name" type="text" name="name" placeholder="Ejemplo" required>
+              </div>
+              <div>
+              <label>Correo</label><br>
+              <input id="form-contacto-email" type="email" name="email" placeholder="Ejemplo@gmail.com" required>
+              </div>
+              <div>
+              <label>Mensaje</label><br>
+              <textarea id="form-contacto-message" name="message" placeholder="Hola, quiero contratarte..." required></textarea>
+              </div>
+              <button class="button_1" type="submit">Enviar</button>
+            </form>
           </div>
         </aside>
       </div>
@@ -162,5 +162,6 @@
     <footer>
       <p>Derechos Reservados, Copyright &copy; 2025</p>
     </footer>
+    <script src="functions.js"></script>
   </body>
 </html>
